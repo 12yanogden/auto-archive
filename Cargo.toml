@@ -1,0 +1,13 @@
+[package]
+name = "auto-archive"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tar = "0.4"
+flate2 = "1.0"
+chrono = "0.4"
+
+[profile.release]
+lto = true
+strip = true

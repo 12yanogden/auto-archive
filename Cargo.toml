@@ -1,6 +1,6 @@
 [package]
 name = "auto-archive"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 repository = "https://github.com/12yanogden/auto-archive"
 
@@ -12,3 +12,7 @@ chrono = "0.4"
 [profile.release]
 lto = true
 strip = true
+
+[profile.dist]
+inherits = "release"
+lto = "thin"
